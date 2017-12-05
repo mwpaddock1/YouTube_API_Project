@@ -1,18 +1,17 @@
 <DOCTYPE html>
-<lang ='en'>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>AJAX YouTube API project</title>
-        <script
+<html lang ='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AJAX YouTube API project</title>
+    <script
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
-        <link href="index.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-      <main>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main role = "main" aria-live="assertive">
         <h1>Search Videos by Topic on YouTube</h1>
           <form action="#" class="js-search-form">
             <label for="query"></label>
@@ -23,7 +22,7 @@
             <div class="js-search-results">            
             </div>
           </div>
-          <div class="more-results display-none"> 
+          <div class="more-results hidden"> 
             <a href="https://www.googleapis.com/youtube/v3/search?pageToken=CBkQAA&..."><h2> More results...</h2></a>
           </div>
       </main>
