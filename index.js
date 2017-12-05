@@ -31,11 +31,13 @@ function renderResult(result) {
 
 function displayYouTubeSearchResults(data) {
   const results = data.items.map((item, index) => renderResult(item));
+ $('.js-results-container').removeClass('hidden');
   $('.js-search-results').html(results);
 }
 
 function watchSubmit() {
   $('.js-search-form').submit(function(event){
+
     event.preventDefault();
     const queryTarget = $(event.currentTarget).find('.js-query');
     const query = queryTarget.val();
